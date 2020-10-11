@@ -8,7 +8,7 @@
   let url_type = "";
   let modal_url = "";
 
-  let project_filters = ["ml", "blog"];
+  let project_filters = ["dl", "blog"];
 
   let social_navbar_text = [
     "#linkedin-navbar-text", 
@@ -32,20 +32,28 @@
   let url2title = {
     "https://github.com/jlilleberg/Forecasting-Platinum-Palladium-Prices": "Forcasting Platinum and Palladium Prices",
     "https://github.com/jlilleberg/Malaria-Cell-Images-Classification": "Detecting Malaria Infected Bloodcells with Neural Networks",
-    "https://github.com/jlilleberg/presidential-transcripts-analysis": "NLP Analysis of Presidential Transcripts"
+    "https://github.com/jlilleberg/presidential-transcripts-analysis": "NLP Analysis of Presidential Transcripts",
+    "https://github.com/jlilleberg/DeepLearning.Ai-Certifications/tree/main/Deep%20Learning%20Specialization": "Deep Learning Specialization",
+    "https://github.com/jlilleberg/DeepLearning.Ai-Certifications/tree/main/NLP%20Specialization": "Natural Language Processing Specialization",
+    "https://github.com/jlilleberg/DeepLearning.Ai-Certifications/tree/main/TensorFlow%20Developer%20Certificate": "TensorFlow Developer Certificate Specialization",
+    "https://github.com/jlilleberg/DeepLearning.Ai-Certifications/tree/main/TensorFlow%20Data%20and%20Deployment%20Specialization": "TensorFlow Data and Deployment Specialization"
   };
 
   // Project Descriptions
   let url2description = {
     "https://github.com/jlilleberg/Forecasting-Platinum-Palladium-Prices": "Having wanted to learn time-series, I took an online class, read fpp2's online forecasting book and reviewed Facebook's Prophet. I pulled the current prices of Platinum from Quandl. Since this project was to improve my ability to forecast as well as the forecasting itself, I applied as many statistical concepts as possible to reinforce the strength of my forecasts and predictions.",
     "https://github.com/jlilleberg/Malaria-Cell-Images-Classification": "Malaria is a mosquito-borne infectious disease that affects humans and other animals. The symptoms range from tiredness, vomitting, and headacches to siezures, comas, and even death. Like any disease, being able to detect if a patient is infected is desireable. The dataset consists of 150 P. falciparum-infected and 50 healthy patients collected and photographed at Chittagong Medical College Hospital, Bangladesh.",
-    "https://github.com/jlilleberg/presidential-transcripts-analysis": "The motivation for this project was to analyze presidential speeches throughout American history. In this end-to-end project, I scrapped and cleaned 992 transcripts were cleaned consisting of 3.8+ million words, or 22+ million characters. I then performed multiple analyses including sentiment analysis, text generation using deep neural networks, and a multitude of visualizations."
+    "https://github.com/jlilleberg/presidential-transcripts-analysis": "The motivation for this project was to analyze presidential speeches throughout American history. In this end-to-end project, I scrapped and cleaned 992 transcripts were cleaned consisting of 3.8+ million words, or 22+ million characters. I then performed multiple analyses including sentiment analysis, text generation using deep neural networks, and a multitude of visualizations.",
+    "https://github.com/jlilleberg/DeepLearning.Ai-Certifications/tree/main/Deep%20Learning%20Specialization": "...",
+    "https://github.com/jlilleberg/DeepLearning.Ai-Certifications/tree/main/NLP%20Specialization": "...",
+    "https://github.com/jlilleberg/DeepLearning.Ai-Certifications/tree/main/TensorFlow%20Developer%20Certificate": "...",
+    "https://github.com/jlilleberg/DeepLearning.Ai-Certifications/tree/main/TensorFlow%20Data%20and%20Deployment%20Specialization": "..."
   };
 
   /* ------------------- Filter Projects ------------------------ */
   
-  // Displays all ml projects
-  function displayMLProjects(){
+  // Displays all dl projects
+  function displayDLProjects(){
     $.each(project_filters, function(index, value){
 
       // Fade out gallery and disable pointer
@@ -53,8 +61,8 @@
       $("body").css("pointer-events", "none");
       setTimeout(function(){
 
-        // Only show selected projects | if ml else blog
-        if (value == "ml") {
+        // Only show selected projects | if dl else blog
+        if (value == "dl") {
           $("."+value).removeClass("hide-project");
         } else {
           $("."+value).addClass("hide-project");
@@ -130,8 +138,8 @@
       // Fillter projects
       if (selectedClass == "all") {
         displayAllProjects();
-      } else if (selectedClass == "ml") {
-        displayMLProjects();
+      } else if (selectedClass == "dl") {
+        displayDLProjects();
       } else if (selectedClass == "blog") {
         displayBlogProjects();
       };
