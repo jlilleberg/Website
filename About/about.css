@@ -343,7 +343,7 @@ svg {
 
 .resume-btn-text {
   color: white; 
-  font-size: calc(26px + (48 - 26) * ((100vw - 300px) / (2000 - 300)));
+  font-size: calc(20px + (48 - 26) * ((100vw - 300px) / (2000 - 300)));
 }
 
 .download-resume-button:hover {
@@ -403,11 +403,11 @@ svg {
   }
 
   #greeting-text {
-    font-size: calc(90px + (250 - 90) * ((100vw - 300px) / (2000 - 300)));
+    font-size: calc(60px + (120 - 60) * ((100vw - 300px) / (2000 - 300)));
     }
 
   #brief-intro-text {
-    font-size: calc(20px + (60 - 20) * ((100vw - 300px) / (2000 - 300)));
+    font-size: calc(10px + (50 - 10) * ((100vw - 300px) / (2000 - 300)));
   }
 
   #my-story-text {
@@ -421,11 +421,11 @@ svg {
 @media only screen and (min-width: 1199.99px) {
 
   #greeting-text {
-    font-size: calc(90px + (250 - 90) * ((100vw - 300px) / (2000 - 300)));
+    font-size: calc(30px + (90 - 30) * ((100vw - 300px) / (2000 - 300)));
   }
 
   #brief-intro-text {
-    font-size: calc(20px + (60 - 20) * ((100vw - 300px) / (2000 - 300)));
+    font-size: calc(10px + (50 - 10) * ((100vw - 300px) / (2000 - 300)));
   }
 
   #my-story-text {

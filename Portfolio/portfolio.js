@@ -30,6 +30,10 @@
 
   // Project Titles
   let url2title = {
+    "https://github.com/jlilleberg/Philosophical-Text-Generation-using-Reformers": "Philosophical Text Generation using Reformers",
+    "https://github.com/jlilleberg/Classifying-Artists-from-their-Artwork-with-High-Class-Imbalance-using-Transfer-Learning": "Classifying Artists from their Artwork with High Class Imbalance using Transfer Learning",
+    "https://github.com/jlilleberg/Predict-Used-Cars-Prices-with-DNN": "Predict Used Cars Prices with DNN",
+    "https://github.com/jlilleberg/Predicting-Insurance-Costs": "Predicting Insurance Costs",
     "https://github.com/jlilleberg/Forecasting-Platinum-Palladium-Prices": "Forcasting Platinum and Palladium Prices",
     "https://github.com/jlilleberg/Malaria-Cell-Images-Classification": "Detecting Malaria Infected Bloodcells with Neural Networks",
     "https://github.com/jlilleberg/presidential-transcripts-analysis": "NLP Analysis of Presidential Transcripts",
@@ -58,6 +62,11 @@
 
   // Project Descriptions
   let url2description = {
+    "https://github.com/jlilleberg/Philosophical-Text-Generation-using-Reformers": "In this project, I downloaded The Republic from an online source and extracted the novel text. I used sentencepiece to create my own byte-pair encoding vocabulary of size 320. I then processed the text and trained a Reformer Language Model for 5000 epochs.",
+    "https://github.com/jlilleberg/Classifying-Artists-from-their-Artwork-with-High-Class-Imbalance-using-Transfer-Learning": "Having done many classification problems with CNNs using TensorFlow, none of them been particulary imbalanced. Class imbalance is fruitful the real world and it's an important skill to learn how to handle class imbalances. Moreover, I am a very artist individual which attracted me to this dataset. Due to the huge class imbalance in the number of artworks for each artist, this dataset would definitely be challenging and I wanted to see how well my model would perform.",
+    "https://github.com/jlilleberg/Predict-Used-Cars-Prices-with-DNN": "Regression is a a very important type of data analysis and a core assest in a practioner's toolbox. I have performed regression on many datasets using Scikit-learn and TensorFlow. As I continue to expand my toolbox, I wanted to perform regression analysis using TensorFlow's preprocessing layers. The reason I chose predicting prices of used cars is because most people, at least that I know, usually buy used as opposed to new so I wanted to perform regression analysis on the former.",
+    "https://github.com/jlilleberg/Predicting-Insurance-Costs": "Insurance costs, espeically in the United States, are very expensive. I wanted to explore what features contribute to high medical costs such as smoking or weight and by how much they contribute. Moreover, I wanted to strengthen my ability to utilize the scikit toolkit such has pipelines, polynomial features, ect. While the features in this dataset are limited, I was able learn many new concepts in Scikit-learn in modeling and evaluation that I can apply to future projects.",
+
     "https://github.com/jlilleberg/Forecasting-Platinum-Palladium-Prices": "Having wanted to learn time-series, I took an online class, read fpp2's online forecasting book and reviewed Facebook's Prophet. I pulled the current prices of Platinum from Quandl. Since this project was to improve my ability to forecast as well as the forecasting itself, I applied as many statistical concepts as possible to reinforce the strength of my forecasts and predictions.",
     "https://github.com/jlilleberg/Malaria-Cell-Images-Classification": "Malaria is a mosquito-borne infectious disease that affects humans and other animals. The symptoms range from tiredness, vomitting, and headacches to siezures, comas, and even death. Like any disease, being able to detect if a patient is infected is desireable. The dataset consists of 150 P. falciparum-infected and 50 healthy patients collected and photographed at Chittagong Medical College Hospital, Bangladesh.",
     "https://github.com/jlilleberg/presidential-transcripts-analysis": "The motivation for this project was to analyze presidential speeches throughout American history. In this end-to-end project, I scrapped and cleaned 992 transcripts were cleaned consisting of 3.8+ million words, or 22+ million characters. I then performed multiple analyses including sentiment analysis, text generation using deep neural networks, and a multitude of visualizations.",
