@@ -170,17 +170,22 @@
 
         <!-- Display All Projects -->
         <li class="nav-item">
-          <a class="d-flex justify-content-center nav-link filter filter-btn filter-btn-all-width btn-floating" href="#!" data-rel="all" >All</a>
+          <a class="d-flex justify-content-center nav-link filter filter-btn filter-btn-all-width btn-floating" href="#!" data-rel="all">All</a>
         </li>
 
-        <!-- Display <placeholder> Project -->
+        <!-- Display Deep Learning Project -->
         <li class="nav-item">
-          <a class="d-flex justify-content-center nav-link filter filter-btn filter-btn-ml-width btn-floating" href="#!" data-rel="dl">Deep Learning</a>
+          <a class="d-flex justify-content-center nav-link filter filter-btn filter-btn-dl-width btn-floating" href="#!" data-rel="dl">Deep Learning Projects</a>
         </li>
 
-        <!-- Display <placeholder> Project -->
+        <!-- Display Certification Courses Project -->
         <li class="nav-item">
-          <a class="d-flex justify-content-center nav-link filter filter-btn filter-btn-certification-width btn-floating" href="#!" data-rel="cert">Certifications</a>
+          <a class="d-flex justify-content-center nav-link filter filter-btn filter-btn-certification-courses-width btn-floating" href="#!" data-rel="cert">Deep Learning Courses</a>
+        </li>
+
+        <!-- Display Certifications Project -->
+        <li class="nav-item">
+          <a class="d-flex justify-content-center nav-link filter filter-btn filter-btn-certification-width btn-floating" href="#!" data-rel="cert-doc">Certifications</a>
         </li>
         
         
@@ -195,6 +200,56 @@
 
             <!-- For each project change: 1. url_type 2. url 3. Image source 4. Project Name 5. Project Description 6. Javascript File -->
             <!-- Images should be 1024 x 768 -->
+
+            <!-- Workera Standardization Test -->
+            <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center cert-doc p-1 project-item hide-project" url_type="certification" url="https://app.workera.ai/public/candidate/certificate?code=BWMIUTOR">
+              <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#CertDocModalCenter">
+                <div class="proj-container">
+                  <img src="Images/workera.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                  <span class="proj-image-title px-4"> Workera.AI's Deep Learning Engineer Certificate </span>
+                </div>
+              </a>
+            </div>
+
+            <!-- Deep Learning Specialization Certificate -->
+            <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center cert-doc p-1 project-item hide-project" url_type="certification" url="https://www.coursera.org/verify/specialization/V82BPPW4Q52P">
+              <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#CertDocModalCenter">
+                <div class="proj-container">
+                  <img src="Images/Deep_Learning.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                  <span class="proj-image-title px-4"> DeepLearning.AI's Deep Learning Specialization Certificate </span>
+                </div>
+              </a>
+            </div>
+
+            <!-- DeepLearning.AI's TensorFlow Developer Certificate -->
+            <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center cert-doc p-1 project-item hide-project" url_type="certification" url="https://www.coursera.org/verify/professional-cert/9R93ZC43XFTD">
+              <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#CertDocModalCenter">
+                <div class="proj-container">
+                  <img src="Images/DeepLearning_AI_TensorFlow_Developer.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                  <span class="proj-image-title px-4"> DeepLearning.AI's TensorFlow Developer Specialization Certificate </span>
+                </div>
+              </a>
+            </div>
+
+            <!-- Natural Language Processing Certificate -->
+            <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center cert-doc p-1 project-item hide-project" url_type="certification" url="https://www.coursera.org/verify/specialization/Z7ZXRLRX3RBQ">
+              <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#CertDocModalCenter">
+                <div class="proj-container">
+                  <img src="Images/Natural_Language_Processing.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                  <span class="proj-image-title px-4"> DeepLearning.AI's Natural Language Processing Specialization Certificate </span>
+                </div>
+              </a>
+            </div>
+
+            <!-- TensorFlow Data and Deployment Certificate -->
+            <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center cert-doc p-1 project-item hide-project" url_type="certification" url="https://www.coursera.org/verify/specialization/LUH6GPTN4HPT">
+              <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#CertDocModalCenter">
+                <div class="proj-container">
+                  <img src="Images/TensorFlow_Data_and_Deployment_Certificate.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                  <span class="proj-image-title px-4"> DeepLearning.AI's TensorFlow Data and Deployment Specialization Certificate </span>
+                </div>
+              </a>
+            </div>
 
             <!-- Plato Text Generation -->
             <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center project-item all dl p-1 enable-blur blur-candidate" url_type="github" url="https://github.com/jlilleberg/Philosophical-Text-Generation-using-Reformers">
@@ -240,7 +295,7 @@
               <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#ModalCenter">
                 <div class="proj-container">
                   <img src="Images/Deep_Learning_Banner.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
-                  <span class="proj-image-title px-4"> Deep Learning Specialization Projects </span>
+                  <span class="proj-image-title px-4"> DeepLearning.AI's Deep Learning Specialization Projects </span>
                   <div class="proj-image-text-container w-100">
                     <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b> In this specialization I worked on case studies in healthcare, autonomous driving, sign language reading, music generation, and natural language processing. I also built near state-of-the-art deep learning models for several of these applications.</span>
                   </div>
@@ -253,7 +308,7 @@
               <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#ModalCenter">
                 <div class="proj-container">
                   <img src="Images/Natural_Language_Processing_Banner.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
-                  <span class="proj-image-title px-4"> Natural Language Processing Specialization Projects </span>
+                  <span class="proj-image-title px-4"> DeepLearning.AI's Natural Language Processing Specialization Projects </span>
                   <div class="proj-image-text-container w-100">
                     <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b> Natural Language Processing (NLP) uses algorithms to understand and manipulate human language. That is, building models that analyze speech and language, uncover contextual patterns, and produce insights from text and audio. </span>
                   </div>
@@ -266,7 +321,7 @@
               <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#ModalCenter">
                 <div class="proj-container">
                   <img src="Images/DeepLearning_AI_TensorFlow_Developer_Banner.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
-                  <span class="proj-image-title px-4"> TensorFlow Developer Certification Projects </span>
+                  <span class="proj-image-title px-4"> DeepLearning.AI's TensorFlow Developer Certification Specialization Projects </span>
                   <div class="proj-image-text-container w-100">
                     <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b> This specialization taught me how to apply machine learning skills with TensorFlow so I could build and train powerful models. </span>
                   </div>
@@ -279,7 +334,7 @@
               <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#ModalCenter">
                 <div class="proj-container">
                   <img src="Images/TensorFlow_Data_and_Deployment_Banner.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
-                  <span class="proj-image-title px-4"> TensorFlow Data and Deployment Specialization Projects </span>
+                  <span class="proj-image-title px-4"> DeepLearning.AI's TensorFlow Data and Deployment Specialization Projects </span>
                   <div class="proj-image-text-container w-100">
                     <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b> In this specialization, I learned how to handle various deployment scenarios and was introduced to TensorFlow Serving, TensorFlow, Hub, TensorBoard, and more. </span>
                   </div>
@@ -301,10 +356,11 @@
             </div>
 
             <!-- Predicting Insurance Costs -->
-            <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center project-item all dl p-1 enable-blur blur-candidate" url_type="github" url="https://github.com/jlilleberg/Predicting-Insurance-Costs" data-toggle="modal" data-target="#ModalCenter">
+            <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center project-item all dl p-1 enable-blur blur-candidate" url_type="github" url="https://github.com/jlilleberg/Predicting-Insurance-Costs">
+              <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#ModalCenter">
                 <div class="proj-container">
                   <img src="Images/predicting_insurance_costs.jpg" class="img-fluid rounded image-faded" alt="Responsive image">
-                  <span class="proj-image-title px-4"> Predicting Health Insurance Costs  </span>
+                  <span class="proj-image-title px-4"> Predicting Health Insurance Costs with Regression Analysis </span>
                   <div class="proj-image-text-container w-100">
                     <span class="proj-image-description px-4 my-3"> <b><ins>About:</ins></b> In this project, I performed EDA anaylsis and regression analysis to predict health insurance costs. </span>
                   </div>
@@ -343,6 +399,7 @@
               <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#ModalCenter">
                 <div class="proj-container">
                   <img src="Images/TF_Data_C1.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                  <span class="proj-image-title px-4"> DeepLearning.AI's TensorFlow Data and Deployment Specialization: Browser-based Models with TensorFlow.js Course Projects</span>
                   <div class="proj-image-text-container w-100">
                     <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b> I learned to train and run machine learning models in any browser using TensorFlow.js, techniques for handling data in the browser, and to build a computer vision project that recognizes and classifies objects from a webcam. </span>
                   </div>
@@ -355,8 +412,9 @@
               <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#ModalCenter">
                 <div class="proj-container">
                   <img src="Images/TF_Data_C2.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                  <span class="proj-image-title px-4"> DeepLearning.AI's TensorFlow Data and Deployment Specialization: Device-based Models with TensorFlow Lite Course Projects</span>
                   <div class="proj-image-text-container w-100">
-                    <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b>I learned to run ML models in mobile apps, prepare models for lower-powered, battery-operated devices, execute models on both Android and iOS platforms, and how to deploy on embedded systems using TensorFlow on Raspberry Pi and microcontrollers.</span>
+                    <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b> I learned to run ML models in mobile apps, prepare models for lower-powered, battery-operated devices, execute models on both Android and iOS platforms, and how to deploy on embedded systems using TensorFlow on Raspberry Pi and microcontrollers.</span>
                   </div>
                 </div>
               </a>
@@ -367,8 +425,9 @@
               <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#ModalCenter">
                 <div class="proj-container">
                   <img src="Images/TF_Data_C3.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                  <span class="proj-image-title px-4"> DeepLearning.AI's TensorFlow Data and Deployment Specialization: Data Pipelines with TensorFlow Data Services Course Projects</span>
                   <div class="proj-image-text-container w-100">
-                    <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b>Using a suite of tools in TensorFlow to more effectively leverage data and train models, I learned how to leverage built-in datasets, use APIs to control how you split your data, and process all types of unstructured data.</span>
+                    <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b> Using a suite of tools in TensorFlow to more effectively leverage data and train models, I learned how to leverage built-in datasets, use APIs to control how you split your data, and process all types of unstructured data.</span>
                   </div>
                 </div>
               </a>
@@ -379,8 +438,9 @@
               <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#ModalCenter">
                 <div class="proj-container">
                   <img src="Images/TF_Data_C4.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                  <span class="proj-image-title px-4"> DeepLearning.AI's TensorFlow Data and Deployment Specialization: Advanced Deployment Scenarios with TensorFlow Course Projects</span>
                   <div class="proj-image-text-container w-100">
-                    <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b>In this course, I learned TensorFlow Serving, TensorFlow Hub, as well as share your model metadata with others. I also explored federated learning and how to can retrain deployed models with user data while maintaining data privacy.</span>
+                    <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b> In this course, I learned TensorFlow Serving, TensorFlow Hub, as well as share your model metadata with others. I also explored federated learning and how to can retrain deployed models with user data while maintaining data privacy.</span>
                   </div>
                 </div>
               </a>
@@ -391,8 +451,9 @@
               <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#ModalCenter">
                 <div class="proj-container">
                   <img src="Images/TF_Dev_C1.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                  <span class="proj-image-title px-4"> DeepLearning.AI's TensorFlow Developer Specialization: Introduction to TensorFlow for AI, ML, and DL Course Projects</span>
                   <div class="proj-image-text-container w-100">
-                    <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b>I learned how to use TensorFlow to implement the important and foundational principles of Machine Learning and Deep Learning so that I could start building and applying scalable models to real-world problems.</span>
+                    <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b> I learned how to use TensorFlow to implement the important and foundational principles of Machine Learning and Deep Learning so that I could start building and applying scalable models to real-world problems.</span>
                   </div>
                 </div>
               </a>
@@ -403,8 +464,9 @@
               <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#ModalCenter">
                 <div class="proj-container">
                   <img src="Images/TF_Dev_C2.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                  <span class="proj-image-title px-4"> DeepLearning.AI's TensorFlow Developer Specialization: Convolutional Neural Networks in TensorFlow Course Projects</span>
                   <div class="proj-image-text-container w-100">
-                    <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b>I explored how to work with real-world images in different shapes and sizes, visualize convolutions, plot loss and accuracy, strategies to prevent overfitting. I also learned transfer learning and how learned features can be extracted from models.</span>
+                    <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b> I explored how to work with real-world images in different shapes and sizes, visualize convolutions, plot loss and accuracy, strategies to prevent overfitting. I also learned transfer learning and how learned features can be extracted from models.</span>
                   </div>
                 </div>
               </a>
@@ -415,8 +477,9 @@
               <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#ModalCenter">
                 <div class="proj-container">
                   <img src="Images/TF_Dev_C3.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                  <span class="proj-image-title px-4"> DeepLearning.AI's TensorFlow Developer Specialization: Natural Language Processing Course Projects</span>
                   <div class="proj-image-text-container w-100">
-                    <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b>I learned to process text, including tokenizing and representing sentences as vectors, so they can be input to a neural network. I also learned to apply RNNs, GRUs, and LSTMs in TensorFlow.</span>
+                    <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b> I learned to process text, including tokenizing and representing sentences as vectors, so they can be input to a neural network. I also learned to apply RNNs, GRUs, and LSTMs in TensorFlow.</span>
                   </div>
                 </div>
               </a>
@@ -427,8 +490,9 @@
               <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#ModalCenter">
                 <div class="proj-container">
                   <img src="Images/TF_Dev_C4.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                  <span class="proj-image-title px-4"> DeepLearning.AI's TensorFlow Developer Specialization: Sequences, Time Series, and Prediction Course Projects</span>
                   <div class="proj-image-text-container w-100">
-                    <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b>I learned to implement best practices to prepare time series data, explored how RNNs and 1D ConvNets can be used for prediction, and to apply everything I've learned to build a sunspot prediction model using real-world data.</span>
+                    <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b> I learned to implement best practices to prepare time series data, explored how RNNs and 1D ConvNets can be used for prediction, and to apply everything I've learned to build a sunspot prediction model using real-world data.</span>
                   </div>
                 </div>
               </a>
@@ -439,8 +503,9 @@
               <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#ModalCenter">
                 <div class="proj-container">
                   <img src="Images/DL_C1.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                  <span class="proj-image-title px-4"> DeepLearning.AI's Deep Learning Specialization: Neural Networks Course Projects</span>
                   <div class="proj-image-text-container w-100">
-                    <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b>I learned the major technology trends driving Deep Learning, built, trained, and applied fully connected deep neural networks, implemented efficient (vectorized) neural networks, what the key parameters in a neural network's architecture are.</span>
+                    <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b> I learned the major technology trends driving Deep Learning, built, trained, and applied fully connected deep neural networks, implemented efficient (vectorized) neural networks, what the key parameters in a neural network's architecture are.</span>
                   </div>
                 </div>
               </a>
@@ -451,8 +516,9 @@
               <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#ModalCenter">
                 <div class="proj-container">
                   <img src="Images/DL_C2.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                  <span class="proj-image-title px-4"> DeepLearning.AI's Deep Learning Specialization: Tuning Networks Course Projects</span>
                   <div class="proj-image-text-container w-100">
-                    <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b>I learned the "magic" of getting deep learning to work well. Rather than the deep learning process being a black box, I spent time understanding what drives performance, and how to be able to more systematically get good results.</span>
+                    <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b> I learned the "magic" of getting deep learning to work well. Rather than the deep learning process being a black box, I spent time understanding what drives performance, and how to be able to more systematically get good results.</span>
                   </div>
                 </div>
               </a>
@@ -463,8 +529,9 @@
               <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#ModalCenter">
                 <div class="proj-container">
                   <img src="Images/DL_C3.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                  <span class="proj-image-title px-4"> DeepLearning.AI's Deep Learning Specialization: Structuring ML Projects Course Projects</span>
                   <div class="proj-image-text-container w-100">
-                    <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b>I learned how to build a successful machine learning project.</span>
+                    <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b> I learned how to build a successful machine learning project.</span>
                   </div>
                 </div>
               </a>
@@ -475,8 +542,9 @@
               <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#ModalCenter">
                 <div class="proj-container">
                   <img src="Images/DL_C4.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                  <span class="proj-image-title px-4"> DeepLearning.AI's Deep Learning Specialization: Convolutional Networks Course Projects</span>
                   <div class="proj-image-text-container w-100">
-                    <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b>I learned how to build convolutional neural networks and apply it to image data.</span>
+                    <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b> I learned how to build convolutional neural networks and apply it to image data.</span>
                   </div>
                 </div>
               </a>
@@ -487,8 +555,9 @@
               <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#ModalCenter">
                 <div class="proj-container">
                   <img src="Images/DL_C5.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                  <span class="proj-image-title px-4"> DeepLearning.AI's Deep Learning Specialization: Sequence Models Course Projects</span>
                   <div class="proj-image-text-container w-100">
-                    <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b>I learned how to build models for natural language, audio, and other sequence data.</span>
+                    <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b> I learned how to build models for natural language, audio, and other sequence data.</span>
                   </div>
                 </div>
               </a>
@@ -499,8 +568,9 @@
               <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#ModalCenter">
                 <div class="proj-container">
                   <img src="Images/NLP_C1.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                  <span class="proj-image-title px-4"> DeepLearning.AI's Natural Language Processing Specialization: Classification and Vector Spaces Course Projects</span>
                   <div class="proj-image-text-container w-100">
-                    <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b>I learned to perform sentiment analysis, use vector space models to discover relationships, PCA to reduce the dimensionality, and write a translation algorithm using pre-computed word embeddings and locality sensitive hashing.</span>
+                    <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b> I learned to perform sentiment analysis, use vector space models to discover relationships, PCA to reduce the dimensionality, and write a translation algorithm using pre-computed word embeddings and locality sensitive hashing.</span>
                   </div>
                 </div>
               </a>
@@ -511,8 +581,9 @@
               <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#ModalCenter">
                 <div class="proj-container">
                   <img src="Images/NLP_C2.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                  <span class="proj-image-title px-4"> DeepLearning.AI's Natural Language Processing Specialization: Probabilistic Models Course Projects</span>
                   <div class="proj-image-text-container w-100">
-                    <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b>I learned to apply the Viterbi Algorithm for POS tagging, write an autocorrect algorithm using an N-gram language model, and write your own Word2Vec model that uses a neural network to compute word embeddings using a continuous bag-of-words model.</span>
+                    <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b> I learned to apply the Viterbi Algorithm for POS tagging, write an autocorrect algorithm using an N-gram language model, and write your own Word2Vec model that uses a neural network to compute word embeddings using a continuous bag-of-words model.</span>
                   </div>
                 </div>
               </a>
@@ -523,8 +594,9 @@
               <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#ModalCenter">
                 <div class="proj-container">
                   <img src="Images/NLP_C3.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                  <span class="proj-image-title px-4"> DeepLearning.AI's Natural Language Processing Specialization: Sequence Models Course Projects</span>
                   <div class="proj-image-text-container w-100">
-                    <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b>I learned to train a NN with GLoVe word embeddings for sentiment analysis, generate synthetic text using a GRU language model, train a RNN to perform NER using LSTMs with linear layers, and use so-called ‘Siamese’ LSTM models to compare questions.</span>
+                    <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b> I learned to train a NN with GLoVe word embeddings for sentiment analysis, generate synthetic text using a GRU language model, train a RNN to perform NER using LSTMs with linear layers, and use so-called ‘Siamese’ LSTM models to compare questions.</span>
                   </div>
                 </div>
               </a>
@@ -535,12 +607,200 @@
               <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#ModalCenter">
                 <div class="proj-container">
                   <img src="Images/NLP_C4.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                  <span class="proj-image-title px-4"> DeepLearning.AI's Natural Language Processing Specialization: Attention Models Course Projects</span>
                   <div class="proj-image-text-container w-100">
-                    <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b>I learned to translate complete English sentences into German using an encoder-decoder attention model, build a Transformer model to summarize text, use T5 and BERT models to perform question-answering, and build a chatbot using a Reformer model.</span>
+                    <span class="proj-image-description px-4 my-3"><b><ins>About:</ins></b> I learned to translate complete English sentences into German using an encoder-decoder attention model, build a Transformer model to summarize text, use T5 and BERT models to perform question-answering, and build a chatbot using a Reformer model.</span>
                   </div>
                 </div>
               </a>
             </div>
+
+            <!-- Deep Learning Specialization Course 1 -->
+            <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center cert-doc p-1 project-item hide-project" url_type="certification" url="https://www.coursera.org/verify/AUB8KWAMQ9J4">
+                <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#CertDocModalCenter">
+                <div class="proj-container">
+                    <img src="Images/DL_C1_CERT.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                    <span class="proj-image-title px-4"> DeepLearning.AI's Deep Learning Specialization: Neural Networks Course Certificate </span>
+                </div>
+                </a>
+            </div>
+
+
+            <!-- Deep Learning Specialization Course 2 -->
+            <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center cert-doc p-1 project-item hide-project" url_type="certification" url="https://www.coursera.org/verify/L3REUMPS5YZS">
+                <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#CertDocModalCenter">
+                <div class="proj-container">
+                    <img src="Images/DL_C2_CERT.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                    <span class="proj-image-title px-4"> DeepLearning.AI's Deep Learning Specialization: Tuning Networks Course Certificate </span>
+                </div>
+                </a>
+            </div>
+
+
+            <!-- Deep Learning Specialization Course 3 -->
+            <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center cert-doc p-1 project-item hide-project" url_type="certification" url="https://www.coursera.org/verify/X6R7ZMT4YVBK">
+                <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#CertDocModalCenter">
+                <div class="proj-container">
+                    <img src="Images/DL_C3_CERT.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                    <span class="proj-image-title px-4"> DeepLearning.AI's Deep Learning Specialization: Structuring ML Projects Course Certificate </span>
+                </div>
+                </a>
+            </div>
+
+
+            <!-- Deep Learning Specialization Course 4 -->
+            <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center cert-doc p-1 project-item hide-project" url_type="certification" url="https://www.coursera.org/verify/NVKRZ5FM5QJ9">
+                <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#CertDocModalCenter">
+                <div class="proj-container">
+                    <img src="Images/DL_C4_CERT.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                    <span class="proj-image-title px-4"> DeepLearning.AI's Deep Learning Specialization: Convolutional Networks Course Certificate </span>
+                </div>
+                </a>
+            </div>
+
+
+            <!-- Deep Learning Specialization Course 5 -->
+            <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center cert-doc p-1 project-item hide-project" url_type="certification" url="https://www.coursera.org/verify/HXXEVAD624FU">
+                <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#CertDocModalCenter">
+                <div class="proj-container">
+                    <img src="Images/DL_C5_CERT.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                    <span class="proj-image-title px-4"> DeepLearning.AI's Deep Learning Specialization: Sequence Models Course Certificate </span>
+                </div>
+                </a>
+            </div>
+
+
+            <!-- DeepLearning.AI's TensorFlow Developer Course 1 -->
+            <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center cert-doc p-1 project-item hide-project" url_type="certification" url="https://www.coursera.org/verify/4ZNQFJ9LBKJP">
+                <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#CertDocModalCenter">
+                <div class="proj-container">
+                    <img src="Images/TF_DEV_C1_CERT.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                    <span class="proj-image-title px-4"> DeepLearning.AI's TensorFlow Developer Specialization: Introduction to TensorFlow for AI, ML, and DL Course Certificate </span>
+                </div>
+                </a>
+            </div>
+
+
+            <!-- DeepLearning.AI's TensorFlow Developer Course 2 -->
+            <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center cert-doc p-1 project-item hide-project" url_type="certification" url="https://www.coursera.org/verify/ACG7CFJK7H2Q">
+                <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#CertDocModalCenter">
+                <div class="proj-container">
+                    <img src="Images/TF_DEV_C2_CERT.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                    <span class="proj-image-title px-4"> DeepLearning.AI's TensorFlow Developer Specialization: Convolutional Neural Networks in TensorFlow Course Certificate </span>
+                </div>
+                </a>
+            </div>
+
+
+            <!-- DeepLearning.AI's TensorFlow Developer Course 3 -->
+            <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center cert-doc p-1 project-item hide-project" url_type="certification" url="https://www.coursera.org/verify/X2PPU98NB4LX">
+                <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#CertDocModalCenter">
+                <div class="proj-container">
+                    <img src="Images/TF_DEV_C3_CERT.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                    <span class="proj-image-title px-4"> DeepLearning.AI's TensorFlow Developer Specialization: Natural Language Processing Course Certificate </span>
+                </div>
+                </a>
+            </div>
+
+
+            <!-- DeepLearning.AI's TensorFlow Developer Course 4 -->
+            <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center cert-doc p-1 project-item hide-project" url_type="certification" url="https://www.coursera.org/verify/SGLB3JHSQ9V5">
+                <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#CertDocModalCenter">
+                <div class="proj-container">
+                    <img src="Images/TF_DEV_C4_CERT.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                    <span class="proj-image-title px-4"> DeepLearning.AI's TensorFlow Developer Specialization: Sequences, Time Series, and Prediction Course Certificate </span>
+                </div>
+                </a>
+            </div>
+
+
+            <!-- Natural Language Processing Course 1 -->
+            <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center cert-doc p-1 project-item hide-project" url_type="certification" url="https://www.coursera.org/verify/AKW3HTUGGE5V">
+                <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#CertDocModalCenter">
+                <div class="proj-container">
+                    <img src="Images/NLP_C1_CERT.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                    <span class="proj-image-title px-4"> DeepLearning.AI's Natural Language Processing Specialization: Classification and Vector Spaces Course Certificate </span>
+                </div>
+                </a>
+            </div>
+
+
+            <!-- Natural Language Processing Course 2 -->
+            <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center cert-doc p-1 project-item hide-project" url_type="certification" url="https://www.coursera.org/verify/ETK34GM68P2U">
+                <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#CertDocModalCenter">
+                <div class="proj-container">
+                    <img src="Images/NLP_C2_CERT.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                    <span class="proj-image-title px-4"> DeepLearning.AI's Natural Language Processing Specialization: Probabilistic Models Course Certificate </span>
+                </div>
+                </a>
+            </div>
+
+
+            <!-- Natural Language Processing Course 3 -->
+            <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center cert-doc p-1 project-item hide-project" url_type="certification" url="https://www.coursera.org/verify/ST7TV53B9746">
+                <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#CertDocModalCenter">
+                <div class="proj-container">
+                    <img src="Images/NLP_C3_CERT.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                    <span class="proj-image-title px-4"> DeepLearning.AI's Natural Language Processing Specialization: Sequence Models Course Certificate </span>
+                </div>
+                </a>
+            </div>
+
+
+            <!-- Natural Language Processing Course 4 -->
+            <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center cert-doc p-1 project-item hide-project" url_type="certification" url="https://www.coursera.org/verify/JZ3KGLJ22B9V">
+                <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#CertDocModalCenter">
+                <div class="proj-container">
+                    <img src="Images/NLP_C4_CERT.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                    <span class="proj-image-title px-4"> DeepLearning.AI's Natural Language Processing Specialization: Attention Models Course Certificate </span>
+                </div>
+                </a>
+            </div>
+
+
+            <!-- TensorFlow Data and Deployment Course 1 -->
+            <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center cert-doc p-1 project-item hide-project" url_type="certification" url="https://www.coursera.org/verify/Q83AVBA35FXH">
+                <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#CertDocModalCenter">
+                <div class="proj-container">
+                    <img src="Images/TF_DD_C1_CERT.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                    <span class="proj-image-title px-4"> DeepLearning.AI's TensorFlow Data and Deployment Specialization: Browser-based Models with TensorFlow.js Course Certificate </span>
+                </div>
+                </a>
+            </div>
+
+
+            <!-- TensorFlow Data and Deployment Course 2 -->
+            <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center cert-doc p-1 project-item hide-project" url_type="certification" url="https://www.coursera.org/verify/Y4FG83EEDA6J">
+                <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#CertDocModalCenter">
+                <div class="proj-container">
+                    <img src="Images/TF_DD_C2_CERT.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                    <span class="proj-image-title px-4"> DeepLearning.AI's TensorFlow Data and Deployment Specialization: Device-based Models with TensorFlow Lite Course Certificate </span>
+                </div>
+                </a>
+            </div>
+
+
+            <!-- TensorFlow Data and Deployment Course 3 -->
+            <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center cert-doc p-1 project-item hide-project" url_type="certification" url="https://www.coursera.org/verify/PGLVBQH4RYCM">
+                <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#CertDocModalCenter">
+                <div class="proj-container">
+                    <img src="Images/TF_DD_C3_CERT.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                    <span class="proj-image-title px-4"> DeepLearning.AI's TensorFlow Data and Deployment Specialization: Data Pipelines with TensorFlow Data Services Course Certificate </span>
+                </div>
+                </a>
+            </div>
+
+
+            <!-- TensorFlow Data and Deployment Course 4 -->
+            <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center cert-doc p-1 project-item hide-project" url_type="certification" url="https://www.coursera.org/verify/JCY7F6AKKQUF">
+                <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#CertDocModalCenter">
+                <div class="proj-container">
+                    <img src="Images/TF_DD_C4_CERT.jpg" class="img-fluid rounded image-faded-deeplearningai" alt="Responsive image">
+                    <span class="proj-image-title px-4"> DeepLearning.AI's TensorFlow Data and Deployment Specialization: Advanced Deployment Scenarios with TensorFlow Course Certificate </span>
+                </div>
+                </a>
+            </div>
+
 
           </div>
 
@@ -549,7 +809,7 @@
           <!-- Project Gallery -->
 
           <!-- Project Modal -->
-          <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+          <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true" >
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div id="modal-content-id" class="modal-content">
                 <div id="modal-header-id" class="modal-header d-flex justify-content-center">
@@ -571,6 +831,31 @@
               </div>
             </div>
           </div>
+
+          <!-- Certification Modal -->
+          <div class="modal fade" id="CertDocModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true" >
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+              <div id="modal-content-id" class="modal-content">
+                <div id="modal-header-id" class="modal-header d-flex justify-content-center">
+                  <h5 class="modal-title" id="modal-title-cert-id"> Modal title </h5>
+                </div>
+                <div class="modal-body p-0" style="position: center; width: 100%;">
+                  
+                  <!-- Modal Project Image -->
+                  <img id="modal-image-cert-id" src="https://images.unsplash.com/photo-1541332246502-2e99eaa96cc1?ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80" class="img-fluid rounded" alt="Responsive image">
+
+
+                </div>
+
+                <!-- Modal Buttons -->
+                <div id="modal-footer-id" class="modal-footer d-flex justify-content-center">
+                  <a id="modal-button-certificate-id" class="btn modal-button-github btn-floating" href="#" data-dismiss="modal"> View Certificate <i style="margin-left: 1px;" class="fas fa-user-graduate"></i></a>
+                  <a class="btn modal-button btn-floating modal-button-close" data-dismiss="modal"> Close </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
           
       </div>
 

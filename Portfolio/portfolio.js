@@ -8,7 +8,7 @@
   let url_type = "";
   let modal_url = "";
 
-  let project_filters = ["dl", "cert", "blog"];
+  let project_filters = ["dl", "cert", "cert-doc"];
 
   let social_navbar_text = [
     "#linkedin-navbar-text", 
@@ -30,6 +30,28 @@
 
   // Project Titles
   let url2title = {
+    "https://www.coursera.org/verify/specialization/V82BPPW4Q52P":"DeepLearning.AI's Deep Learning Specialization Certificate",
+    "https://www.coursera.org/verify/professional-cert/9R93ZC43XFTD":"DeepLearning.AI's TensorFlow Developer Specialization Certificate",
+    "https://www.coursera.org/verify/specialization/Z7ZXRLRX3RBQ":"DeepLearning.AI's Natural Language Processing Specialization Certificate",
+    "https://www.coursera.org/verify/specialization/LUH6GPTN4HPT":"DeepLearning.AI's TensorFlow Data and Deployment Specialization Certificate",
+    "https://www.coursera.org/verify/AUB8KWAMQ9J4":"DeepLearning.AI's Deep Learning Specialization: Neural Networks Course Certificate",
+    "https://www.coursera.org/verify/L3REUMPS5YZS":"DeepLearning.AI's Deep Learning Specialization: Tuning Networks Course Certificate",
+    "https://www.coursera.org/verify/X6R7ZMT4YVBK":"DeepLearning.AI's Deep Learning Specialization: Structuring ML Projects Course Certificate",
+    "https://www.coursera.org/verify/NVKRZ5FM5QJ9":"DeepLearning.AI's Deep Learning Specialization: Convolutional Networks Course Certificate",
+    "https://www.coursera.org/verify/HXXEVAD624FU":"DeepLearning.AI's Deep Learning Specialization: Sequence Models Course Certificate",
+    "https://www.coursera.org/verify/4ZNQFJ9LBKJP":"DeepLearning.AI's TensorFlow Developer Specialization: Introduction to TensorFlow for AI, ML, and DL Course Certificate",
+    "https://www.coursera.org/verify/ACG7CFJK7H2Q":"DeepLearning.AI's TensorFlow Developer Specialization: Convolutional Neural Networks in TensorFlow Course Certificate",
+    "https://www.coursera.org/verify/X2PPU98NB4LX":"DeepLearning.AI's TensorFlow Developer Specialization: Natural Language Processing Course Certificate",
+    "https://www.coursera.org/verify/SGLB3JHSQ9V5":"DeepLearning.AI's TensorFlow Developer Specialization: Sequences, Time Series, and Prediction Course Certificate",
+    "https://www.coursera.org/verify/AKW3HTUGGE5V":"DeepLearning.AI's Natural Language Processing Specialization: Classification and Vector Spaces Course Certificate",
+    "https://www.coursera.org/verify/ETK34GM68P2U":"DeepLearning.AI's Natural Language Processing Specialization: Probabilistic Models Course Certificate",
+    "https://www.coursera.org/verify/ST7TV53B9746":"DeepLearning.AI's Natural Language Processing Specialization: Sequence Models Course Certificate",
+    "https://www.coursera.org/verify/JZ3KGLJ22B9V":"DeepLearning.AI's Natural Language Processing Specialization: Attention Models Course Certificate",
+    "https://www.coursera.org/verify/Q83AVBA35FXH":"DeepLearning.AI's TensorFlow Data and Deployment Specialization: Browser-based Models with TensorFlow.js Course Certificate",
+    "https://www.coursera.org/verify/Y4FG83EEDA6J":"DeepLearning.AI's TensorFlow Data and Deployment Specialization: Device-based Models with TensorFlow Lite Course Certificate",
+    "https://www.coursera.org/verify/PGLVBQH4RYCM":"DeepLearning.AI's TensorFlow Data and Deployment Specialization: Data Pipelines with TensorFlow Data Services Course Certificate",
+    "https://www.coursera.org/verify/JCY7F6AKKQUF":"DeepLearning.AI's TensorFlow Data and Deployment Specialization: Advanced Deployment Scenarios with TensorFlow Course Certificate",
+    "https://app.workera.ai/public/candidate/certificate?code=BWMIUTOR": "Workera.ai's Deep Learning Engineer Certificate",
     "https://github.com/jlilleberg/Philosophical-Text-Generation-using-Reformers": "Philosophical Text Generation using Reformers",
     "https://github.com/jlilleberg/Classifying-Artists-from-their-Artwork-with-High-Class-Imbalance-using-Transfer-Learning": "Classifying Artists from their Artwork with High Class Imbalance using Transfer Learning",
     "https://github.com/jlilleberg/Predict-Used-Cars-Prices-with-DNN": "Predict Used Cars Prices with DNN",
@@ -124,7 +146,7 @@
     }, 600);
   };
 
-  // Displays all certifications
+  // Displays all certifications courses
   function displayCertifications(){
     $("#gallery").fadeOut("slow");
     $("body").css("pointer-events", "none");
@@ -152,8 +174,8 @@
     }, 600);
   };
 
-  // Displays all blog projects
-  function displayBlogs(){
+  // Displays all certification images
+  function displayCertificationsImages(){
     $("#gallery").fadeOut("slow");
     $("body").css("pointer-events", "none");
     setTimeout(function(){
@@ -165,7 +187,7 @@
 
       // Show all certifications
       $.each($("#gallery-projects").children(), function(index, value){
-        if ($(this).hasClass("blog")) {
+        if ($(this).hasClass("cert-doc")) {
           $(this).removeClass("hide-project");
         }
       });
@@ -216,8 +238,8 @@
         displayDeepLearningProjects();
       } else if (selectedClass == 'cert') {
         displayCertifications();
-      } else if (selectedClass == "blog") {
-        displayBlogs();
+      } else if (selectedClass == "cert-doc") {
+        displayCertificationsImages();
       };
     });
   });
@@ -263,24 +285,50 @@
 
       // Get url type and url link
       url_type = $(this).attr("url_type");
-      modal_url = $(this).attr("url");
 
+      if (url_type == 'github') {
+        modal_url = $(this).attr("url");
+
+        $("#modal-button-github-id").attr("href", modal_url);    
+
+        // Update modal title and modal text
+        $("#modal-title-id").text(url2title[modal_url]);
+        $("#modal-text-id").text(url2description[modal_url]);
+
+        // Update Modal image to respective project image
+        image_src = $(this).find("a div img").attr("src");
+        $("#modal-image-id").attr("src", image_src);
+
+      } else if (url_type == 'certification') {
+        modal_url = $(this).attr("url");
+
+        $("#modal-button-certificate-id").attr("href", modal_url);
+
+        // Update modal title and modal text
+        $("#modal-title-cert-id").text(url2title[modal_url]);
+
+        // Update Modal image to respective project image
+        image_src = $(this).find("a div img").attr("src");
+        $("#modal-image-cert-id").attr("src", image_src);
+
+      }
       
-      $("#modal-button-github-id").attr("href", modal_url);    
-
-      // Update modal title and modal text
-      $("#modal-title-id").text(url2title[modal_url]);
-      $("#modal-text-id").text(url2description[modal_url]);
-
-      // Update Modal image to respective project image
-      image_src = $(this).find("a div img").attr("src");
-      $("#modal-image-id").attr("src", image_src);
     });
   });
 
   // Github Button is Pressed
   $(function(){
     $("#modal-button-github-id").click(function(){
+      let win = window.open(modal_url, "_blank");
+      if (win) {
+        win.focus();
+      }
+    })
+  })
+
+  // Certificatee Button is Pressed
+  $(function(){
+    $("#modal-button-certificate-id").click(function(){
       let win = window.open(modal_url, "_blank");
       if (win) {
         win.focus();
