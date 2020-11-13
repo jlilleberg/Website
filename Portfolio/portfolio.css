@@ -345,20 +345,16 @@ svg {
   width: calc(40px + (100 - 40) * ((100vw - 300px) / (2000 - 300)));
 }
 
-.filter-btn-dl-width {
-  width: calc(115px + (350 - 115) * ((100vw - 300px) / (2000 - 300)));
+.filter-btn-projects-width {
+  width: calc(215px + (450 - 215) * ((100vw - 300px) / (2000 - 300)));
+}
+
+.filter-btn-courses-width {
+  width: calc(215px + (450 - 215) * ((100vw - 300px) / (2000 - 300)));
 }
 
 .filter-btn-certification-width {
   width: calc(105px + (300 - 105) * ((100vw - 300px) / (2000 - 300)));
-}
-
-.filter-btn-certification-courses-width {
-  width: calc(215px + (450 - 215) * ((100vw - 300px) / (2000 - 300)));
-}
-
-.filter-btn-blog-width {
-  width: calc(90px + (250 - 90) * ((100vw - 300px) / (2000 - 300)));
 }
 
 .filter-btn:hover {
@@ -574,7 +570,7 @@ svg {
 -------------------------------------------------------------------------------------------------------------------------------------------
 */
 
-
+/* Reduce Font Size */
 @media only screen and (min-width: 950px) {
   .nav-text {
     font-size: 17px;
@@ -605,4 +601,24 @@ svg {
   } 
 }
 
+/* Reduce Project and Course Buttons Width */
+@media only screen and (max-width: 1000px) {
+  .filter-btn-projects-width, .filter-btn-courses-width {
+    width: calc(155px + (380 - 155) * ((100vw - 300px) / (2000 - 300)));
+  }
+}
+
+/* Reduce Project and Course Buttons Width */
+@media only screen and (max-width: 800px) {
+  .filter-btn-projects-width, .filter-btn-courses-width {
+    width: calc(135px + (360 - 135) * ((100vw - 300px) / (2000 - 300)));
+  }
+}
+
+/* Reduce Certification Button Width */
+@media only screen and (max-width: 715px) {
+  .filter-btn-certification-width {
+    width: calc(85px + (220 - 85) * ((100vw - 300px) / (2000 - 300)));
+  }
+}
 
