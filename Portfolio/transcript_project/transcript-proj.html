@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	    <!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	    <!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	    <!-- Font Awesome -->
+	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	    <!-- Google Fonts -->
+	    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+	    <!-- Bootstrap core CSS -->
+	    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+	    <!-- Material Design Bootstrap -->
+	    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+	    <link href="transcript-proj..css" rel="stylesheet">
+
+	    <title> Textual Analysis and Language Models of United States Presidential Speeches </title>
+ 	</head>
+  	<body>
+
+  		<div id="upper-border" class="row background-color d-flex justify-content-center align-items-center text-center">
+  			<div class="col-2"></div>
+  			<div class="col-8 project-title-text">
+  				Textual Analysis and Language Models of Presidential Speeches of the United States
+  			</div>
+  			<div class="col-2"></div>
+  		</div>
+  		<div class="row background-color">
+  			<div class="col-2"></div>
+  			<div class="col-8 description-color description-text">
+  				<br/>
+                Political eras in the United States refer to a model of American politics used in history and political science to periodize the political party system existing in the United States. Political scientists and historians have divided the development of America's two-party system into six eras.
+                <br/><br/>
+                For each political era, I have performed data exploration, sentiment analysis, generated texts using neural networks, topic modeling and text data visualizations. The project is separated into the respective categories stated above where each category contains interactive visualizations to allow further insight and exploration into the data. 
+                <br/>
+                <br/>
+                Important: This project is best viewed on desktop as some plots do not display properly on mobile.
+                <br/>
+                <br/>
+  			</div>
+  			<div class="col-2"></div>
+  		</div>
+
+  		<div id="bottom-border" class="row background-color"></div>
+
+  		<div id="gallery-container">
+  			<div id="gallery" class="gallery m-4 px-2">
+  				<div id="gallery-projects" class="row m-1">
+
+  					<div id="eda-id" class="col-12 col-sm-6 col-lg-3 d-flex align-items-center">
+  						<a class="p-1 m-3 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#CertDocModalCenter">
+	  						<div class="proj-container">
+                  <div class="text-center proj-title"> Exploratory Data Exploration </div>
+                  <img src="Images/pres-transcripts-eda-img.jpg" class="img-fluid rounded p-4" alt="Responsive image">
+                  <div class="text-center proj-description">
+                  Interactive visualizations on the overview characteristics of presidential transcripts. </div>
+			          </div>
+  						</a>
+  					</div>
+
+            <div id="sentiment-analysis-id" class="col-12 col-sm-6 col-lg-3 d-flex align-items-center">
+              <a class="p-1 m-3 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#CertDocModalCenter">
+                <div class="proj-container">
+                  <div class="text-center proj-title"> Sentiment Analysis </div>
+                  <img src="Images/pres-transcripts-sentiment-analysis-img.jpg" class="img-fluid rounded p-4" alt="Responsive image">
+                  <div class="text-center proj-description">
+                  Analysis of emotional and subjective tones of presidential transcripts. </div>
+                </div>
+              </a>
+            </div>
+
+            <div id="text-generation-id" class="col-12 col-sm-6 col-lg-3 d-flex align-items-center">
+              <a class="p-1 m-3 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#CertDocModalCenter">
+                <div class="proj-container">
+                  <div class="text-center proj-title"> Text Generation using Recurrent Neural Networks </div>
+                  <img src="Images/pres-transcripts-text-generation-img.jpg" class="img-fluid rounded p-4" alt="Responsive image">
+                  <div class="text-center proj-description">
+                  Artificial presidential speech using text generation with recurrent neural networks trained on President Obama's speeches. </div>
+                </div>
+              </a>
+            </div>
+
+            <div id="scattertext-id" class="col-12 col-sm-6 col-lg-3 d-flex align-items-center">
+              <a class="p-1 m-3 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#CertDocModalCenter">
+                <div class="proj-container">
+                  <div class="text-center proj-title"> Textual Deconstruction & Visualization </div>
+                  <img src="Images/pres-transcripts-visualizations-img.jpg" class="img-fluid rounded p-4" alt="Responsive image">
+                  <div class="text-center proj-description">
+                  In-depth interactive visualizations with topic modeling, term associations, empaths, term and topic frequencies, and word similiarities. </div>
+                </div>
+              </a>
+            </div>
+  				</div>
+  			</div>
+  		</div>
+
+	    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+	    <script type="text/javascript" src="about.js"></script>
+
+      <script>
+
+      $("#eda-id").click(function(){
+         window.location.href = 'Data_Exploration/data_exploration.html'
+      });
+
+      $("#sentiment-analysis-id").click(function(){
+         window.location.href = 'Sentiment_Analysis/sentiment_analysis.html'
+      });
+
+      $("#text-generation-id").click(function(){
+         window.location.href = 'Generated_Texts/generated_transcripts.html'
+      });
+
+      $("#scattertext-id").click(function(){
+         window.location.href = 'Visualizations/visualizations.html'
+      });
+
+      </script>
+  	</body>
+</html>

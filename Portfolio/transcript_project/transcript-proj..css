@@ -1,0 +1,120 @@
+:root {
+
+  --primary-color: #E1D9C7;
+
+  /* Navbar Fill Buttons */
+  --eff-fill-text-color: var(--navbar-text-color);
+  --eff-fill-border-color: var(--primary-color);
+  --eff-inner-filling-icon-button-color: var(--navbar-text-color);
+
+  /* Shadows */
+  --image-shadow-color1: black;
+  --image-shadow-color2: var(--primary-color);
+}
+
+body {
+	background-color: #444;
+}
+
+#upper-border {
+	height: 20vh;
+}
+
+#description {
+	height: 15vh;
+}
+
+.btn-width {
+  width: 100px; /*180*/
+}
+
+.btn-press:active {
+  box-shadow: none;
+  transform: translate(6px, 6px);
+  transition-duration: .1s;
+}
+
+.project-title-text {
+	font-family: Zapf Chancery, cursive;
+	font-weight: 900;
+	color: #E1D9C7;
+	font-size: calc(20px + (60 - 20) * ((100vw - 300px) / (2000 - 300)));
+}
+
+.description-text {
+	font-size: calc(10px + (25 - 10) * ((100vw - 300px) / (2000 - 300)));
+}
+
+.description-color {
+	border-radius: min(2vh, 2vw);
+	background-color: #E1D9C7;
+}
+
+.proj-image-pop {
+  background-color: #2D2D2D;
+  border: 2px solid var(--image-shadow-color2);
+  border-radius: 5px;
+  box-shadow: 6px 6px 3px 0px var(--image-shadow-color1), 9px 9px 3px 0px var(--image-shadow-color2);
+}
+
+.proj-image-pop:hover {
+  color: white;
+  border: 2px solid white;
+  box-shadow: 6px 6px 3px 0px var(--image-shadow-color1), 9px 9px 3px 0px white;
+}
+
+.proj-image-pop:hover div img {
+  filter: blur(2.5px) brightness(75%);
+}
+
+.proj-image-pop:hover div div {
+  visibility: visible;
+}
+
+.proj-image-pop:hover .proj-image-title {
+  border: 2.5px solid white;
+}
+
+.proj-image-pop:active {
+  box-shadow: none;
+  transform: translate(6px, 6px);
+  transition-duration: .1s;
+}
+
+.proj-container {
+  position: relative; 
+  
+  height: 35vh;
+}
+
+.proj-title {
+  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (2000 - 300)));
+  color: #E1D9C7;
+}
+
+.proj-description {
+  font-size: calc(12px + (14 - 12) * ((100vw - 300px) / (2000 - 300)));
+  color: #E1D9C7;
+}
+
+@media only screen and (max-width: 992px) {
+  .proj-title {
+    font-size: calc(22px + (26 - 22) * ((100vw - 300px) / (2000 - 300)));
+    color: #E1D9C7;
+  }
+  .proj-description {
+    font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (2000 - 300)));
+    color: #E1D9C7;   
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .proj-title {
+    font-size: calc(22px + (26 - 22) * ((100vw - 300px) / (2000 - 300)));
+    color: #E1D9C7;
+  }
+  .proj-description {
+    font-size: calc(18px + (22 - 18) * ((100vw - 300px) / (2000 - 300)));
+    color: #E1D9C7;   
+  }
+}

@@ -88,7 +88,6 @@
       </div>
       <!-- Navbar Social Buttons -->
 
-
       <!-- Collapse button for mobile dropdown --> 
       <button id="navbar-mobile-btn" class="navbar-toggler navbar-dropdown-toggle-button" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" 
         aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -200,6 +199,20 @@
 
             <!-- For each project change: 1. url_type 2. url 3. Image source 4. Project Name 5. Project Description 6. Javascript File -->
             <!-- Images should be 1024 x 768 -->
+
+            <!-- Predicting Insurance Costs -->
+            <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center project-item all dl p-1 enable-blur blur-candidate" url_type="project" url="transcript_project/transcript-proj.html">
+              <a class="m-1 btn-press proj-image-pop btn-floating" data-toggle="modal" data-target="#ProjModalCenter">
+                <div class="proj-container">
+                  <img src="Images/transcripts-proj-img.jpg" class="img-fluid rounded image-faded" alt="Responsive image">
+                  <span class="proj-image-title px-4"> Textual Analysis and Language Models of Presidential Speeches </span>
+                  <div class="proj-image-text-container w-100">
+                    <span class="proj-image-description px-4 my-3"> <b><ins>About:</ins></b> In this project, I webscraped all the presidential transcripts, generated in-depth interactive visualizations and built a recurrent neural network to generate new transcripts. </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
 
             <!-- Workera Standardization Test -->
             <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center cert-doc p-1 project-item hide-project" url_type="certification" url="https://app.workera.ai/public/candidate/certificate?code=BWMIUTOR">
@@ -850,6 +863,30 @@
                 <!-- Modal Buttons -->
                 <div id="modal-footer-id" class="modal-footer d-flex justify-content-center">
                   <a id="modal-button-certificate-id" class="btn modal-button-github btn-floating" href="#" data-dismiss="modal"> View Certificate <i style="margin-left: 1px;" class="fas fa-user-graduate"></i></a>
+                  <a class="btn modal-button btn-floating modal-button-close" data-dismiss="modal"> Close </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Modal -->
+          <div class="modal fade" id="ProjModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true" >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div id="modal-content-id" class="modal-content">
+                <div id="modal-header-id" class="modal-header d-flex justify-content-center">
+                  <h5 class="modal-title" id="modal-title-proj-id"> Modal title </h5>
+                </div>
+                <div class="modal-body p-0" style="position: center; width: 100%;">
+                  
+                  <!-- Modal Project Image -->
+                  <img id="modal-image-proj-id" src="https://images.unsplash.com/photo-1541332246502-2e99eaa96cc1?ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80" class="img-fluid rounded modal-image" alt="Responsive image">
+                  <span id="modal-text-proj-id" class="modal-image-text"> Modal Text </span>
+
+                </div>
+
+                <!-- Modal Buttons -->
+                <div id="modal-footer-id" class="modal-footer d-flex justify-content-center">
+                  <a id="modal-button-proj-id" class="btn modal-button-github btn-floating" href="#" data-dismiss="modal"> View Project <i style="margin-left: 1px;" class="fas fa-user-graduate"></i></a>
                   <a class="btn modal-button btn-floating modal-button-close" data-dismiss="modal"> Close </a>
                 </div>
               </div>
