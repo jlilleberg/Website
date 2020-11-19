@@ -7,6 +7,14 @@
 	margin-bottom: 5vh;
 }
 
+#back-btn {
+	background-color: #B42033; 
+	color: white;
+	height: 38px;
+	width: 62px;
+	margin-bottom: 2px;
+}
+
 #displayed_transcript {
 	color: #CECECE; 
 	margin-left: 25px;

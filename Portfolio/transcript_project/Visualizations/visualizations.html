@@ -26,7 +26,7 @@
             </button>
           </div>
           <div class="modal-body" style="background-color: white;">
-            The following descriptions below explain the types of plots and the information they convey. Please note that some interactive visualizations take longer than others to render.<br/><br/>
+            The following descriptions below explain the types of plots and the information they convey. Please note that some interactive visualizations take longer than others to render, up to a few minutes. Select your political era and respective plots below. <br/><br/>
 
              LDA Topics: Latent Dirichlet Allocation (LDA) is an example of topic model and is used to classify text in a document to a particular topic. It builds a topic per document model and words per topic model, modeled as Dirichlet distributions.<br/><br/>
 
@@ -50,6 +50,7 @@
     </div>
 
     <nav class="navbar navbar-dark bg-dark">
+      <a id="back-btn-id" href="../transcript-proj.html"><button type="button" class="btn btn-danger btn-md back-btn" style="background-color: #B42033;">Back</button></a>
     </nav>
 
     <nav class="navbar navbar-dark bg-dark">
@@ -802,9 +803,8 @@
 
       // Back button
       function back_btn() {
-
-          window.location.href = "../presidential_project_index.html";
-        }
+        window.location.href = "../transcript-proj.html";
+      }
 
     </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

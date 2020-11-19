@@ -15,11 +15,12 @@
 <body>
 
   <nav class="navbar navbar-dark bg-dark">
+    <button id="back-btn" type="button" class="btn btn-md back-btn" onClick="back_btn();">Back</button>
   </nav>
   <nav class="navbar navbar-dark bg-dark">
     <ul class="navbar-nav nav-fill w-100">
         <li class="nav-item">
-          <p id="displayed_plot_title" class="navbar-brand mb-0 h1">Select a Plot</p>
+          <p id="displayed_plot_title" class="navbar-brand mb-0 h1">Select a Plot Below From the Bottom Left of the Navbar</p>
         </li>
       </ul>
   </nav>
@@ -823,6 +824,11 @@
       "subj_presidents_6" : "Subjectivity of Presidents during the Sixth Party System (1964–present) over time",
 
       "pol_vs_subj": "Polarity vs Subjectivity"
+    }
+
+    /* Back Button */
+    function back_btn() {
+      window.location.href = "../transcript-proj.html";
     }
 
     /* Update iframe source */
