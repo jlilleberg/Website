@@ -2,6 +2,7 @@
 :root {
 
   --primary-color: #1ACBDC;
+  --border-hover-color: #9D4EDD;
 
   /* Navbar */
 	--navbar-bg-color: #202020;
@@ -17,7 +18,7 @@
 
   /* Shadows */
   --image-shadow-color1: black;
-  --image-shadow-color2: var(--primary-color);;
+  --image-shadow-color2: var(--primary-color);
 
 	/* Social Media Colors */
 	--linkedin-color: #2867B2;
@@ -157,15 +158,15 @@ svg {
 .nav-site-btn-links {
   border-radius: 5px;
   color: var(--image-shadow-color2);
-  border: 1px solid #3BBA9C;
+  border: 1px solid var(--image-shadow-color2);
   margin: 15px;
   box-shadow: 5px 5px 3px 0px var(--image-shadow-color1), 8px 8px 3px 0px var(--image-shadow-color2);
 }
 
 .nav-site-btn-links:hover {
   color: white;
-  border: 1px solid white;
-  box-shadow: 5px 5px 3px 0px var(--image-shadow-color1), 8px 8px 3px 0px white;
+  border: 1px solid #9d4edd;
+  box-shadow: 5px 5px 3px 0px var(--image-shadow-color1), 8px 8px 3px 0px var(--border-hover-color);
 }
 
 .nav-site-btn-links:active {
@@ -183,7 +184,7 @@ svg {
 .navbar-social-btn-width-with-no-text {
   width: 40px;
   height: 40px;
-  box-shadow: 3px 3px 2.5px 0px var(--image-shadow-color1), 5px 5px 2.5px 0px var(--image-shadow-color2);
+  box-shadow: 4px 4px 2.5px 0px var(--image-shadow-color1), 6px 6px 2.5px 0px var(--image-shadow-color2);
 }
 
 /* -------------------------------------------------------- Navbar: Dropdown Animation ---------------------------------------------------- */
@@ -293,8 +294,8 @@ svg {
 
 .navbar-dropdown-button-styling:hover {
   color: white !important;
-  border: 1px solid white;
-  box-shadow: 5px 5px 3px 0px var(--image-shadow-color1), 8px 8px 3px 0px white;
+  border: 1px solid var(--border-hover-color);
+  box-shadow: 5px 5px 3px 0px var(--image-shadow-color1), 8px 8px 3px 0px var(--border-hover-color);
 }
 
 .navbar-dropdown-button-styling:active {
@@ -314,7 +315,8 @@ svg {
 }
 
 .btn-mobile-social:hover {
-  box-shadow: 5px 5px 3px 0px var(--image-shadow-color1), 8px 8px 3px 0px white;
+  border-color: #9d4edd;
+  box-shadow: 5px 5px 3px 0px var(--image-shadow-color1), 8px 8px 3px 0px var(--border-hover-color);
 }
 
 .btn-mobile-social:active {
@@ -359,8 +361,8 @@ svg {
 
 .filter-btn:hover {
   color: white;
-  border: 1px solid white;
-  box-shadow: 5px 5px 3px 0px var(--image-shadow-color1), 8px 8px 3px 0px white;
+  border: 1px solid var(--border-hover-color);
+  box-shadow: 5px 5px 3px 0px var(--image-shadow-color1), 8px 8px 3px 0px var(--border-hover-color);
 }
 
 .filter-btn:active {
@@ -372,15 +374,15 @@ svg {
 /* -------------------------------------------------------- Gallery: Project Images ------------------------------------------------------- */
 
 .proj-image-pop {
-  border: 2px solid var(--image-shadow-color2);
+  border: 3.5px solid var(--image-shadow-color2);
   border-radius: 5px;
-  box-shadow: 6px 6px 3px 0px var(--image-shadow-color1), 9px 9px 3px 0px var(--image-shadow-color2);
+  box-shadow: 6px 6px 3px 0px var(--image-shadow-color1), 10px 10px 3px 0px var(--image-shadow-color2);
 }
 
 .proj-image-pop:hover {
   color: white;
-  border: 2px solid red;
-  box-shadow: 6px 6px 3px 0px var(--image-shadow-color1), 9px 9px 5px 0px red;
+  border: 3.5px solid var(--border-hover-color);
+  box-shadow: 6px 6px 3px 0px var(--image-shadow-color1), 10px 10px 3px 0px var(--border-hover-color);
 }
 
 
@@ -390,7 +392,8 @@ svg {
 }
 
 .proj-image-pop:hover .proj-image-title {
-  border: 2.5px solid red;
+  border-top: 2.5px solid var(--border-hover-color);
+  border-bottom: 2.5px solid var(--border-hover-color);
 }
 
 .proj-image-pop:active {
@@ -419,7 +422,8 @@ svg {
   width: 100%;
   background: black; 
   padding: 2px; 
-  border: 2.5px solid var(--primary-color);
+  border-top: 2.5px solid var(--primary-color);
+  border-bottom: 2.5px solid var(--primary-color);
 }
 
 .proj-image-divider {
@@ -510,8 +514,8 @@ svg {
 
 .modal-button:hover {
   color: white;
-  border: 1px solid white;
-  box-shadow: 5px 5px 3px 0px var(--image-shadow-color1), 8px 8px 3px 0px white;
+  border: 1px solid var(--border-hover-color);
+  box-shadow: 5px 5px 3px 0px var(--image-shadow-color1), 8px 8px 3px 0px var(--border-hover-color);
 }
 
 .modal-button:active {
@@ -604,8 +608,8 @@ svg {
   }
 
 .modal-image-text {
-  font-size: calc(11px + (13 - 11) * ((100vw - 300px) / (2000 - 300)));
-}
+  font-size: calc(10px + (12 - 10) * ((100vw - 300px) / (2000 - 300)));
+ }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -638,6 +642,12 @@ svg {
   } 
 }
 
+@media only screen and (min-width: 950px) {
+  .modal-image-text {
+    font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (2000 - 300)));
+   }
+ }
+
 @media only screen and (min-width: 1100px) {
   .nav-text {
     font-size: 22px;
@@ -663,45 +673,55 @@ svg {
 }
 
 /* Reduce Project and Course Buttons Width */
+/* 1000px */
 @media only screen and (max-width: 1000px) {
   .filter-btn-certification-width {
-    width: calc(90px + (140 - 90) * ((100vw - 300px) / (2000 - 300)));
+    width: calc(100px + (140 - 100) * ((100vw - 300px) / (2000 - 300)));
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .filter-btn-certification-width {
-    width: calc(90px + (140 - 90) * ((100vw - 300px) / (2000 - 300)));
-  }
-}
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   .filter-btn-projects-width, .filter-btn-courses-width {
-    width: calc(75px + (120 - 75) * ((100vw - 300px) / (2000 - 300)));
+    width: calc(80px + (100 - 80) * ((100vw - 300px) / (2000 - 300)));
+  }
+}
+
+/* 800px */
+@media only screen and (max-width: 800px) {
+  .filter-btn-certification-width {
+    width: calc(100px + (140 - 100) * ((100vw - 300px) / (2000 - 300)));
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .filter-btn-projects-width, .filter-btn-courses-width {
+    width: calc(70px + (80 - 70) * ((100vw - 300px) / (2000 - 300)));
+  }
+}
+
+/* 450px */
+@media only screen and (max-width: 450px) {
+  .filter-btn-certification-width {
+    width: calc(100px + (110 - 100) * ((100vw - 300px) / (2000 - 300)));
   }
 }
 
 @media only screen and (max-width: 450px) {
   .filter-btn-projects-width, .filter-btn-courses-width {
-    width: calc(65px + (105 - 65) * ((100vw - 300px) / (2000 - 300)));
+    width: calc(65px + (70 - 65) * ((100vw - 300px) / (2000 - 300)));
   }
 }
 
-@media only screen and (max-width: 400px) {
+/* 400px */
+@media only screen and (max-width: 450px) {
   .filter-btn-certification-width {
-    width: calc(80px + (100 - 80) * ((100vw - 300px) / (2000 - 300)));
+    width: calc(80px + (90 - 80) * ((100vw - 300px) / (2000 - 300)));
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .filter-btn-projects-width, .filter-btn-courses-width {
-    width: calc(60px + (90 - 60) * ((100vw - 300px) / (2000 - 300)));
-  }
-}
-
-@media only screen and (max-width: 360px) {
-  .filter-btn-projects-width, .filter-btn-courses-width {
-    width: calc(50px + (70 - 50) * ((100vw - 300px) / (2000 - 300)));
+    width: calc(55px + (60 - 55) * ((100vw - 300px) / (2000 - 300)));
   }
 }
 
