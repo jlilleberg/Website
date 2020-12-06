@@ -411,7 +411,7 @@ svg {
 }
 
 .proj-image-title {
-  font-size: calc(13px + (22 - 13) * ((100vw - 300px) / (2000 - 300)));
+  font-size: calc(11px + (20 - 11) * ((100vw - 300px) / (2000 - 300)));
   font-weight: 900;
   color: white; 
   position: absolute !important; 
@@ -461,11 +461,11 @@ svg {
 }
 
 .image-faded {
-  filter: brightness(90%);
+  filter: brightness(95%);
 }
 
 .image-faded-deeplearningai {
-  filter: brightness(90%);
+  filter: brightness(95%);
 }
 
 /* -------------------------------------------------------- Gallery: Modal ---------------------------------------------------------------- */
