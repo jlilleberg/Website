@@ -495,8 +495,8 @@ svg {
   left: 0; 
   text-align: center; 
   width: 100%; 
-  top: 5%;
-  font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (2000 - 300)));
+  top: 2%;
+  font-size: calc(11px + (13 - 11) * ((100vw - 300px) / (2000 - 300)));
   position: absolute; padding: 5%;
 }
 
@@ -692,6 +692,12 @@ svg {
 @media only screen and (max-width: 400px) {
   .filter-btn-projects-width, .filter-btn-courses-width {
     width: calc(60px + (90 - 60) * ((100vw - 300px) / (2000 - 300)));
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .filter-btn-projects-width, .filter-btn-courses-width {
+    width: calc(50px + (70 - 50) * ((100vw - 300px) / (2000 - 300)));
   }
 }
 
