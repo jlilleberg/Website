@@ -459,15 +459,17 @@ svg {
   width: 100%;
   background: black; 
   padding: 2px; 
-  border: 2.5px solid white; 
+  font-size: calc(13px + (15 - 13) * ((100vw - 300px) / (2000 - 300)));
+  border-top: 2.5px solid var(--border-hover-color); 
+  border-bottom: 2.5px solid var(--border-hover-color); 
 }
 
 .image-faded {
-  filter: brightness(95%);
+  filter: brightness(98%);
 }
 
 .image-faded-deeplearningai {
-  filter: brightness(95%);
+  filter: brightness(98%);
 }
 
 /* -------------------------------------------------------- Gallery: Modal ---------------------------------------------------------------- */
