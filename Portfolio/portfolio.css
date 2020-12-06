@@ -496,7 +496,7 @@ svg {
   text-align: center; 
   width: 100%; 
   top: 2%;
-  font-size: calc(11px + (13 - 11) * ((100vw - 300px) / (2000 - 300)));
+  font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (2000 - 300)));
   position: absolute; padding: 5%;
 }
 
@@ -602,6 +602,10 @@ svg {
 .proj-image-title {
     font-size: calc(9px + (11 - 9) * ((100vw - 300px) / (2000 - 300)));
   }
+
+.modal-image-text {
+  font-size: calc(11px + (13 - 11) * ((100vw - 300px) / (2000 - 300)));
+}
 }
 
 @media only screen and (min-width: 1000px) {
